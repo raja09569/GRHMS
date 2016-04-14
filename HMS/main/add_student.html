@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script type="text/javascript" src="min.js"></script>
+   <script src="script.js"></script>
+   <link rel="stylesheet" href="text.css" >
+   <link rel="stylesheet" href="std.css" >
+   <style type="text/css">
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;  
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    width: 160px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #4691A4;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.form-style-1 .required{
+    color:red;
+}
+</style>
+   <title>Hostel Management Software</title>
+</head>
+<body>
+<div class="wrap">
+<nav class="nav-bar navbar-inverse" role="navigation">
+    <div id="top-menu" class="container-fluid active">
+      <a class="navbar-brand" href="#">Grpg for Boys</a>
+      <ul class="nav navbar-nav">
+        <form id="qform" class="navbar-form pull-left" role="search">
+          <!-- <input type="text" class="form-control" placeholder="Search" /> -->
+		  <address style="color: #999; font-size: 13px;">
+		jaibheemnagar, Bangalore<br />
+		karnataka, 560068<br />
+		Mobile No: +91-9620620234<br />
+		Email: ramesh@grpg.co.in
+		</address>
+        </form>
+        <li class="dropdown movable">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><span class="fa fa-4x fa-child"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><span class="fa fa-user"></span>My Profile</a></li>
+            <li><a href="#"><span class="fa fa-gear"></span>Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html"><span class="fa fa-power-off"></span>Logout</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+<div id='cssmenu' class="aside" role="navigation">
+<ul>
+   <!-- <li style="border-bottom: 1px solid white;"class="active"><a href='index.html'><i class="fa fa-tachometer"></i>&nbsp; 
+   Dashboard</a></li>
+    <li class='active has-sub'><a href='#'>Rooms Management</a>
+   <li style="border-bottom: 1px solid white;"class="tab"><a href='rooms.html'><i class="fa fa-table"></i>&nbsp; 
+   Rooms Management</a> 
+   </li>
+   <li style="border-bottom: 1px solid white;" class="tab"><a href='staff.html'><i class="fa fa-user"></i>&nbsp; 
+   Staff Management</a></li>
+   <li style="border-bottom: 1px solid white;" class="tab"><a href='students.html'><i class="fa fa-users"></i>&nbsp; 
+   Students Management</a></li>  -->
+   <li style="border-bottom: 1px solid white;"class="active"><a href='index.html'><i class="fa fa-tachometer"></i>&nbsp; 
+   <span>Dashboard</span></a></li>
+   <li style="border-bottom: 1px solid white;"class='active has-sub'><a href='rooms.html'><i class="fa fa-table"></i>&nbsp;
+   <span>Room Management</span></a>
+      <ul>
+         <li class=''><a href='#'><span>Add Rooms</span></a>
+            <!-- <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul> -->
+         </li>
+         <li class='last'><a href='#'><span>Delete Rooms</span></a>
+            <!-- <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul> -->
+         </li>
+		 <li class='last'><a href='#'><span>Allot Rooms</span></a>
+            <!-- <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul> -->
+         </li>
+      </ul>
+   </li>
+   <li style="border-bottom: 1px solid white;" class="tab"><a href='staff.html'><i class="fa fa-user"></i>&nbsp;
+   <span>Staff Management</span></a></li>
+   <li style="border-bottom: 1px solid white;" class='active has-sub'><a href='students.html'><i class="fa fa-users"></i>&nbsp;
+   <span>Students Management</span></a>
+		<ul>
+         <li class=''><a href='#'><span>Add Students</span></a>
+            <!-- <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul> -->
+         </li>
+         <li class='last'><a href='#'><span>Delete Students</span></a>
+            <!-- <ul>
+               <li><a href='#'><span>Sub Product</span></a></li>
+               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+            </ul> -->
+         </li>
+      </ul>
+   </li>
+</ul>
+</div>
+<!--Body content-->
+  <div class="content">
+    <div class="top-bar">
+      <a href="#menu" class="cssmenu-link burger">
+        <span class='burger_inside' id='bgrOne'></span>
+        <span class='burger_inside' id='bgrTwo'></span>
+        <span class='burger_inside' id='bgrThree'></span>
+      </a>
+    </div>
+    <section class="content-inner">
+      <center><h1>Add Student</h1></center> 
+      <h3></h3>
+	  <form action="all_students.html">
+		<div class="form">
+			<img src="profile.png" >
+			<input name="image_file" type="file" />
+			<button style="width: 200px; height: 32px; font-weight:bold;">Upload</button>
+		</div>
+		<div class="form">
+		<ul class="form-style-1">
+			<li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+			<li>
+				<label>Email <span class="required">*</span></label>
+				<input type="email" name="field3" class="field-long" />
+			</li>
+			<li>
+				<label>MobileNo : <span class="required">*</span></label>
+				<input type="email" name="field3" class="field-long" />
+			</li>
+			<li>
+				<label>Permanant Address :<span class="required">*</span></label>
+				<textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+			</li>
+			
+		</ul>
+		</div>
+		<div class="form">
+		<ul class="form-style-1">
+			<li>
+				<label>Temporary Address :<span class="required">*</span></label>
+				<textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+			</li>
+			<li>
+				<label>Room No : <span class="required">*</span></label>
+				<input type="email" name="field3" class="field-long" /><button>Allot</button>
+			</li>
+			<li>
+				<label>Id proof : <span class="required">*</span></label>
+				<input name="image_file" type="file" />
+			</li>
+		</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<ul class="form-style-1" style="margin-top: 0;margin-right: 100px;">
+			<li style="float: left; margin-right: 40px;">
+				<input type="submit" value="Save" />
+			</li>
+			<li>
+				<input type="submit" value="Save & Add" />
+			</li>
+		</ul>
+	  </form>
+    </section>
+</div>
+</div>
+</body>
+<html>
