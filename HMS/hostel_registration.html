@@ -1,0 +1,221 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Hostel Registration Form</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="logo.jpg">
+  <link rel="icon" href="logo.jpg">
+  <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="switchery.min.css">
+  <script type="text/javascript" src="switchery.js"></script>
+  <script language="JavaScript" type="text/javascript">
+	function HandleBrowseClick()
+	{
+		var fileinput = document.getElementById("browse");
+		fileinput.click();
+		var textinput = document.getElementById("filename");
+		textinput.value = fileinput.value;
+	}
+	</script><style type="text/css">
+
+fieldset.group  { 
+  margin: 0; 
+  padding: 0; 
+  margin-bottom: 1.25em; 
+  padding: .125em; 
+} 
+
+fieldset.group legend { 
+  margin: 0; 
+  padding: 0; 
+  font-weight: bold; 
+  margin-left: 20px; 
+  font-size: 100%; 
+  color: black; 
+} 
+
+li {
+    display: inline;
+}
+ul.checkbox  { 
+  margin: 0; 
+  padding: 0; 
+  margin-left: 20px; 
+  list-style: none; 
+} 
+
+ul.checkbox li input { 
+  margin-right: .25em; 
+} 
+
+ul.checkbox li { 
+  border: 1px transparent solid; 
+} 
+
+ul.checkbox li label { 
+  margin-left: ; 
+} 
+ul.checkbox li:hover, 
+ul.checkbox li.focus  { 
+  background-color: lightyellow; 
+  border: 1px gray solid; 
+  width: 12em; 
+} 
+
+.group{
+	text-align: center;
+}
+  </style><script type="text/javascript">
+// Using JQuery selectors to add onFocus and onBlur event handlers
+
+$(document).ready( function() {
+
+  // Add the "focus" value to class attribute 
+  $('ul.checkbox li').focusin( function() {
+    $(this).addClass('focus');
+  }
+  );
+
+  // Remove the "focus" value to class attribute 
+  $('ul.checkbox li').focusout( function() {
+    $(this).removeClass('focus');
+  }
+  );
+
+}
+);
+
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <h1>Hostel Registration Form</h1>
+  
+  <form onsubmit="return false" >
+  <div class="col-3">
+    <label>
+      Hostel Owner
+      <input placeholder="What is your full name?" id="experience" name="experience" tabindex="7">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Hostel Name
+      <input placeholder="What is your Hostel name?" id="name" name="name" tabindex="1">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Hostel Type
+      <select tabindex="5">
+        <option>Select which type of Hostel</option>
+        <option>Gents</option>
+		<option>Ladies</option>
+      </select>
+    </label>
+  </div>
+  
+  <div class="col-2">
+    <label>
+      Hostel Address
+      <input placeholder="Where your hostel is located ?" id="phone" name="phone" tabindex="3">
+    </label>
+  </div>
+  <div class="col-4">
+    <label>
+      Mobile Number
+      <input placeholder="What is your mobile number?" id="phone" name="phone" tabindex="3">
+    </label>
+  </div>
+  <div class="col-4">
+    <label>
+      Email
+      <input placeholder="What is your e-mail address?" id="email" name="email" tabindex="4">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Logo
+      <!-- MAX_FILE_SIZE must be set before the input element -->
+	<input type="hidden" name="MAX_FILE_SIZE" value="2048000" />
+	<input name="image_file" type="file" />
+    </label>
+  </div>
+  
+  <!-- <div class="col-4">
+    <label>
+      Skills
+      <input placeholder="List a few of your primary skills" id="skills" name="skills" tabindex="6">
+    </label>
+  </div> -->
+  <div class="col-3">
+    <label>
+      Url
+      <input placeholder="what is your website url ?" id="experience" name="experience" tabindex="7">
+    </label>
+  </div>
+  <div class="col-3">
+    <label>
+      Comments
+      <input placeholder="you want any thing more? write here..." id="comments" name="comments" type="textarea" tabindex="7">
+    </label>
+  </div>
+  <!-- <div class="col-3">
+    <label>
+      Payments
+      <input placeholder="?" id="experience" name="experience" tabindex="7">
+    </label>
+  </div> -->
+  <div style="width: 100%;border-bottom: 1px solid #e4e4e4;box-shadow: 1px 1px #e4e4e4; border: none; ">
+    <label>
+      Services
+	  <fieldset class="group"> 
+		<ul class="checkbox"> 
+		  <li><input type="checkbox" id="cb1" value="pepperoni" /><label for="cb1">Wifi</label></li> 
+		  <li><input type="checkbox" id="cb2" value="sausage" /><label for="cb2">Ac</label></li> 
+		  <li><input type="checkbox" id="cb3" value="mushrooms" /><label for="cb3">3times food</label></li> 
+		  <li><input type="checkbox" id="cb4" value="onions" /><label for="cb4">2times food</label></li> 
+		  <li><input type="checkbox" id="cb5" value="gpeppers" /><label for="cb5">washing machine</label></li> 
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">furnished</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">semi furnished</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">refrigerator</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">geyser</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">veg</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">non-veg</label></li>  <br />
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">2 wheeler parking</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">4 wheeler parking</label></li>  
+		  <li><input type="checkbox" id="cb6" value="xcheese" /><label for="cb6>">without food</label></li> 
+		</ul> 
+	  </fieldset> 
+    </label>
+  </div>
+  
+  <!-- <div class="col-4">
+    <label>Contact References?</label>
+    <center style="position:relative; margin-bottom:8px;"><input type="checkbox" class="js-switch"></center>
+  </div>
+  <div class="col-4 switch">
+    <label>E-mail Updates?</label>
+    <center style="position:relative;margin-bottom:8px;"><input type="checkbox" class="js-switch"></center>
+  </div> -->
+  
+  <div class="col-submit">
+    <button class="submitbtn">Submit Form</button>
+  </div>
+  
+  </form>
+  </div>
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>
